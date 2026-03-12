@@ -1,0 +1,10 @@
+<img class="card-img-top" [src]="fruit.image" alt="" />
+
+<div class="p-1">
+  <h3>{{ fruit.title }}</h3>
+
+  <p class="d-flex justify-content-between">
+    {{ fruit.price }}
+    <button class="btn btn-primary" (click)="sendToParent()">Add to cart</button>
+  </p>
+</div>

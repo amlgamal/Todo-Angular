@@ -1,0 +1,68 @@
+{
+  "todoList": [
+    {
+      "id": "86481104204.66843",
+      "title": "math0",
+      "description": "chapter 1\n",
+      "date": "2026-03-10T21:45:15.090Z",
+      "check": true
+    },
+    {
+      "id": "356949391416.7819",
+      "title": "Angular",
+      "description": "big world intro\n",
+      "date": "2026-03-10T22:49:05.493Z",
+      "check": true
+    },
+    {
+      "id": "342719233854.07874",
+      "title": "BootStrap",
+      "description": "first lecture",
+      "date": "2026-03-11T00:07:57.279Z",
+      "check": true
+    },
+    {
+      "id": "488282597760.6252",
+      "title": "javascript",
+      "description": "chapter5\n",
+      "date": "2026-03-11T01:16:59.741Z",
+      "check": false
+    },
+    {
+      "id": "858441469130.5745",
+      "title": "node js",
+      "description": "chapter 6",
+      "date": "2026-03-11T20:10:38.758Z",
+      "check": false
+    },
+    {
+      "id": "345298151129.95483",
+      "title": "node js",
+      "description": "chapter 8",
+      "date": "2026-03-11T20:11:06.392Z",
+      "check": true
+    },
+    {
+      "id": "1656039011648.4702",
+      "title": "Angular",
+      "description": "chapter 9",
+      "date": "2026-03-11T20:11:32.942Z",
+      "check": true
+    },
+    {
+      "id": "1052133083776.5947",
+      "title": "stanadalone",
+      "description": "zoneless",
+      "date": "2026-03-12T14:05:56.657Z",
+      "check": true
+    },
+    {
+      "id": "1538621120898.9512",
+      "title": "hola",
+      "description": "finish",
+      "date": "2026-03-12T14:10:56.054Z",
+      "check": false
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

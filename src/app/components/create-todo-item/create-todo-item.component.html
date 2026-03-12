@@ -1,0 +1,48 @@
+<!-- <form
+  class="d-flex flex-column align-items-center gap-4 mt-4"
+  [formGroup]="createForm"
+  (ngSubmit)="onSubmit()"
+>
+  <h1>Create New ToDo</h1>
+  <div class="mb-3 w-50">
+    <input class="form-control" type="text" placeholder="Task 1" formControlName="title" />
+  </div>
+  <div class="mb-3 w-50">
+    <textarea
+      class="form-control"
+      rows="3"
+      placeholder="Description"
+      formControlName="description"
+    ></textarea>
+  </div>
+  <button class="btn btn-outline-success w-25" type="submit">Create</button>
+</form> -->
+
+<div class="container py-5 text-center">
+  <div class="card border-0 shadow-sm rounded-4 mx-auto p-4" style="max-width: 720px">
+    <h2 class="fw-bold mb-4">New Task ✦</h2>
+    <form class="d-flex flex-column gap-3" [formGroup]="createForm" (ngSubmit)="onSubmit()">
+      <div>
+        <!-- <label class="text-muted small fw-semibold text-uppercase mb-1">Title</label> -->
+        <input
+          class="form-control rounded-3"
+          type="text"
+          placeholder="What needs to be done?"
+          formControlName="title"
+        />
+      </div>
+      <div>
+        <!-- <label class="text-muted small fw-semibold text-uppercase mb-1">Description</label> -->
+        <textarea
+          class="form-control rounded-3"
+          rows="3"
+          placeholder="Add some details..."
+          formControlName="description"
+        ></textarea>
+      </div>
+      <button class="btn btn-outline-danger rounded-3 py-2 mt-2 fw-semibold" type="submit">
+        <i class="bi bi-plus-lg me-2"></i>Create Task
+      </button>
+    </form>
+  </div>
+</div>

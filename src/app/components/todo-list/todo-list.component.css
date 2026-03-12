@@ -1,0 +1,20 @@
+.input-group {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.input-group-text,
+.form-control {
+  border-color: #e0e0e0;
+  padding: 10px 14px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #a0a0a0;
+}
+
+.form-control::placeholder {
+  color: #bbb;
+  font-size: 0.9rem;
+}

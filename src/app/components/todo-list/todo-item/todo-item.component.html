@@ -1,0 +1,43 @@
+<!-- <div class="card">
+  <div class="card-body">
+    <div class="form-check d-flex align-items-center">
+      <input
+        type="checkbox"
+        class="form-check-input me-2"
+        [checked]="itemInfo.check"
+        (change)="toggleCheck()"
+      />
+      <h4 class="fw-bold mb-0">{{ itemInfo.title }}</h4>
+
+      <button class="btn btn-outline-danger ms-auto" (click)="deleteTask()">
+        <i class="bi bi-trash3-fill"></i>
+      </button>
+    </div>
+
+    <p class="mt-2 text-muted">{{ itemInfo.description }}</p>
+
+    <P class="text-secondary text-end small">
+      {{ itemInfo.date | date }}
+    </P>
+  </div>
+</div> -->
+
+<div class="card border-0 shadow-sm rounded-4 mb-3 border-start border-4" 
+     [ngClass]="itemInfo.check ? 'border-success' : 'border-danger'">
+  <div class="card-body">
+    <div class="d-flex align-items-center">
+      <input type="checkbox" class="form-check-input me-2" [checked]="itemInfo.check" (change)="toggleCheck()" />
+      <h4 class="fw-bold mb-0 flex-grow-1">{{ itemInfo.title }}</h4>
+      <!-- <button class="btn btn-sm text-muted" (click)="deleteTask()">
+        <i class="bi bi-trash3-fill"></i>
+      </button> -->
+      <button class="btn btn-outline-danger btn-sm" (click)="deleteTask()">
+  <i class="bi bi-trash3-fill"></i>
+</button>
+    </div>
+    <p class="mt-2 text-muted small">{{ itemInfo.description }}</p>
+    <span class="text-secondary d-block text-end" style="font-size: 0.78rem;">
+      <i class="bi bi-calendar3 me-1"></i>{{ itemInfo.date | date }}
+    </span>
+  </div>
+</div>
