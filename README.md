@@ -1,59 +1,127 @@
-# ProjectName
+<div align="center">
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.0.
+# ✅ Angular Todo App
 
-## Development server
+**A simple Todo application built with Angular as part of my learning journey.**  
+Focused on practicing modern Angular concepts and building a real-world mini application.
 
-To start a local development server, run:
+---
+
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+
+</div>
+
+---
+
+## ✨ Features
+
+| Feature | Description |
+|---|---|
+| ➕ Add Tasks | Quickly add new tasks from a dedicated page |
+| ✅ Complete Tasks | Mark tasks as done with one click |
+| ❌ Delete Tasks | Remove tasks you no longer need |
+| 🔁 Page Navigation | Navigate between Todo List and Create Task pages |
+| ⚡ Optimistic UI | Instant UI updates without waiting for async ops |
+
+---
+
+## 🛠️ Technologies Used
+
+- **Angular** — Frontend framework
+- **Angular Standalone Components** — Modern component architecture
+- **Angular Signals** — Reactive state management
+- **Angular Router** — Client-side navigation
+- **Reactive Forms** — Form handling & validation
+- **Bootstrap** — UI styling
+
+---
+
+## 📂 Project Structure
+
+```
+angular-todo-app/
+│
+├── src/
+│   ├── app/
+│   │   ├── components/
+│   │   │   ├── todo-list/            
+│   │   │   │   └── todo-item/        
+│   │   │   └── create-todo-item/     
+│   │   │
+│   │   ├── app.component.ts
+│   │   └── app-routing.module.ts
+│   │
+│   └── main.ts
+│
+├── angular.json
+└── package.json
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/) `v24+`
+- [Angular CLI](https://angular.io/cli)
 
 ```bash
+npm install -g @angular/cli
+```
+
+### Installation
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/amlgamal/Todo-Angular.git
+
+# 2. Navigate into the project
+cd Todo-Angular
+
+# 3. Install dependencies
+npm install
+
+# 4. Run the development server
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Then open your browser and visit: **`http://localhost:4200`** 🎉
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 📚 What I Learned
 
-```bash
-ng generate component component-name
-```
+Through this project I practiced:
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- Building applications using **Angular Standalone Components**
+- Managing state using **Angular Signals**
+- Implementing **routing between pages**
+- Creating **CRUD operations**
+- Structuring a clean Angular application
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+## 🔗 Repository
 
-To build the project run:
+GitHub: [https://github.com/amlgamal/Todo-Angular](https://github.com/amlgamal/Todo-Angular)
 
-```bash
-ng build
-```
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 💬 Feedback
 
-## Running unit tests
+Any feedback or suggestions are welcome! Feel free to open an issue or reach out. 😊
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+---
 
-```bash
-ng test
-```
+<div align="center">
 
-## Running end-to-end tests
+Made with ❤️ using Angular
 
-For end-to-end (e2e) testing, run:
+⭐ **If you found this helpful, give it a star!** ⭐
 
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+</div>
