@@ -10,6 +10,7 @@ Focused on practicing modern Angular concepts and building a real-world mini app
 ![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![JSON Server](https://img.shields.io/badge/JSON_Server-000000?style=for-the-badge&logo=json&logoColor=white)
 
 </div>
 
@@ -24,6 +25,7 @@ Focused on practicing modern Angular concepts and building a real-world mini app
 | ❌ Delete Tasks | Remove tasks you no longer need |
 | 🔁 Page Navigation | Navigate between Todo List and Create Task pages |
 | ⚡ Optimistic UI | Instant UI updates without waiting for async ops |
+| 🔍 Search Tasks | Filter tasks instantly using the search bar |
 
 ---
 
@@ -35,6 +37,7 @@ Focused on practicing modern Angular concepts and building a real-world mini app
 - **Angular Router** — Client-side navigation
 - **Reactive Forms** — Form handling & validation
 - **Bootstrap** — UI styling
+- **JSON Server** — Fake REST API for local development
 
 ---
 
@@ -46,9 +49,9 @@ angular-todo-app/
 ├── src/
 │   ├── app/
 │   │   ├── components/
-│   │   │   ├── todo-list/            
-│   │   │   │   └── todo-item/        
-│   │   │   └── create-todo-item/     
+│   │   │   ├── todo-list/            # Main list component
+│   │   │   │   └── todo-item/        # Single task component (nested)
+│   │   │   └── create-todo-item/     # Add task form component
 │   │   │
 │   │   ├── app.component.ts
 │   │   └── app-routing.module.ts
@@ -67,7 +70,7 @@ angular-todo-app/
 
 Make sure you have the following installed:
 
-- [Node.js](https://nodejs.org/) `v24+`
+- [Node.js](https://nodejs.org/) `v16+`
 - [Angular CLI](https://angular.io/cli)
 
 ```bash
@@ -86,7 +89,10 @@ cd Todo-Angular
 # 3. Install dependencies
 npm install
 
-# 4. Run the development server
+# 4. Run JSON Server (in a separate terminal)
+npx json-server db.json
+
+# 5. Run the development server
 ng serve
 ```
 
