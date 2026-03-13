@@ -53,11 +53,15 @@ angular-todo-app/
 │   │   │   │   └── todo-item/        # Single task component (nested)
 │   │   │   └── create-todo-item/     # Add task form component
 │   │   │
+│   │   ├── services/
+│   │   │   └── todo.service.ts       # Task logic & API calls
+│   │   │
 │   │   ├── app.component.ts
 │   │   └── app-routing.module.ts
 │   │
 │   └── main.ts
 │
+├── db.json
 ├── angular.json
 └── package.json
 ```
